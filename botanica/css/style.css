@@ -1,0 +1,138 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+html, body{
+	font-family: 'Montserrat', sans-serif;
+	background: #F7FAFC;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: grid;
+	/**max-width: 1200px;**/
+	grid-template: minmax(26px, auto) minmax(64px, auto) 1fr minmax(97px, auto) / 1fr;
+}
+
+.header {
+	display: grid;
+	grid-template: 1fr / 1fr minmax(auto, 1200px) 1fr;
+	align-items: center;
+	border-top: 1px solid #AE7C78;
+	border-bottom: 1px solid #AE7C78;
+	grid-row: 2/3;
+}
+.header__menu {
+	display: grid;
+	grid-auto-flow: column;
+	grid-column: 2/3;
+}
+.header__list {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.header_link {
+	font-size: 16px;
+	line-height: 20px;
+	color: #AE7C78;
+}
+
+.main {
+	grid-row: 3/4;
+	width: 1200px;
+	justify-self: center;
+}
+.promo {
+	display: flex;
+	margin-top: 82px;
+}
+.promo__text {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 384px;
+	margin-right: 23px;
+}
+.promo__title h1{
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 44px;
+	line-height: 59px;
+	color: #AE7C78;
+}
+.promo__title span{
+	font-style: italic;
+}
+.promo__subtitle {
+	font-size: 24px;
+	line-height: 29px;
+	color: #AE7C78;
+	margin-top: 24px;
+}
+.promo__button {
+	margin-top: 64px;
+	display: flex;
+	background: #D89999;
+	border-radius: 40px;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	width: 285px;
+}
+.promo__button > a{
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFF;
+}
+.promo__gallery {
+	display: flex;
+	min-height: 462px;
+	justify-content: space-between;
+	min-width: 793px;
+}
+.promo_image:nth-child(1) {
+	align-self: flex-end;
+}
+
+
+.footer {
+	background: #cad;
+	grid-row: 4/5;
+}
