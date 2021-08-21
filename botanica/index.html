@@ -12,29 +12,29 @@
 		<div class="wrapper">
 			<header class="header">
 				<nav class="header__menu">
+					<a href="#" class="header__logo">
+						<img src="img/botanica_logo.svg" alt="Logo" width="100" height="33">
+					</a>
 					<ul class="header__list">
 						<li><a href="#" class="header_link">Каталог</a></li>
 						<li><a href="#" class="header_link">Доставка и оплата</a></li>
 						<li><a href="#" class="header_link">Отзывы</a></li>
-						<li><a href="#" class="header_link_logo"><img src="img/botanica_logo.svg" alt="Logo" width="100" height="33"></a></li>
 						<li><a href="#" class="header_link">Спецпредложения</a></li>
 						<li><a href="#" class="header_link">Контакты</a></li>
 						<li><a href="#" class="header_link">Корзина</a></li>
 					</ul>
 				</nav>
 			</header>
-			<main class="main">
+			<main class="content__main">
 				<section class="promo">
 					<div class="promo__text">
-						<div class="promo__title">
-							<h1>Авторские букеты<br><span>в Петербурге</span></h1>
-						</div>
-						<div class="promo__subtitle">
+						<h1 class="promo__title">Авторские букеты<em>в Петербурге</em></h1>
+						<p class="promo__subtitle">
 							Оригинальные свежие букеты с доставкой по всему городу
-						</div>
-						<div class="promo__button">
-							<a href="">Смотреть каталог</a>
-						</div>
+						</p>
+						<a href="#" class="promo__button button">
+							Смотреть каталог
+						</a>
 					</div>
 					<div class="promo__gallery">
 						<div class="promo_image">
@@ -45,118 +45,166 @@
 						</div>
 					</div>
 				</section>
+
 				<section class="advant">
 					<div class="advant__item">
-						<div class="advant__title">
+						<p class="advant__title">
 							Быстрая доставка
-						</div>
-						<div class="advant__text">
+						</p>
+						<p class="advant__text">
 							Можем собрать букет и передать его в доставку всего за час.
-						</div>
+						</p>
 					</div>
 					<div class="advant__item">
-						<div class="advant__title">
+						<p class="advant__title">
 							Всегда свежие цветы
-						</div>
-						<div class="advant__text">
+						</p>
+						<p class="advant__text">
 							Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.
-						</div>
+						</p>
 					</div>
 					<div class="advant__item">
-						<div class="advant__title">
+						<p class="advant__title">
 							Отправляем фото цветов
-						</div>
-						<div class="advant__text">
+						</p>
+						<p class="advant__text">
 							Перед доставкой сделаем фотографию букета и отправим вам.
-						</div>
+						</p>
 					</div>
 				</section>
+
 				<section class="popular">
-					<div class="popular__header">
-						<h3>Популярные букеты</h3>
-					</div>
-					<div class="popular__carousel">
+					<h2 class="popular__header">Популярные букеты</h2>
+					<div class="popular__slider">
 						<div class="popular__item">
-							<div class="popular__title">Букет «Нежность»</div>
-							<div class="popular_desc">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</div>
-							<div class="popular__size">30 × 40 см</div>
-							<div class="popular__price">3600 руб.</div>
-							<div class="popular__button button">Заказать</div>
+							<h3 class="popular__title">
+								Букет «Нежность»
+							</h3>
+							<p class="popular_desc">
+								Элегантный букет, который станет отличным подарком на день рождения или юбилей.
+							</p>
+							<p class="popular__size">
+								30 × 40 см
+							</p>
+							<p class="popular__price">
+								3600 руб.
+							</p>
+							<a href="" class="popular__button button">
+								Заказать
+							</a>
 						</div>
 						<div class="popular__flower">
-							<img src="img/popular_flower1.png " alt="" height="438" width="387">
+							<img src="img/popular_flower1.png" alt="" height="438" width="387">
 						</div>
 					</div>
-					<div class="popular__arrows">
-						<a href="#"><img src="img/icon/arrow_less.svg" alt=""></a>
-						<a href="#"><img src="img/icon/arrow_more.svg" alt=""></a>
+					<div class="popular__controls">
+						<button type="button">
+							<span class="visually-hidden">Назад</span>
+						</button>
+						<button type="button">
+							<span class="visually-hidden">Вперед</span>
+						</button>
 					</div>
 				</section>
+
 				<section class="catalog">
 					<a href="#" class="catalog__item">
-						<div class="catalog__title">
+						<h3 class="catalog__title">
 							Свадебные букеты
-						</div>
-						<div class="catalog__desc">
+						</h3>
+						<p class="catalog__desc">
 							Букеты для невест
-						</div>
+						</p>
 					</a>
 					<a href="#" class="catalog__item">
-						<div class="catalog__title">
+						<h3 class="catalog__title">
 							Букеты с пионами
-						</div>
-						<div class="catalog__desc">
+						</h3>
+						<p class="catalog__desc">
 							Букеты с сезонными пионами
-						</div>
+						</p>
 					</a>
 					<a href="#" class="catalog__item">
-						<div class="catalog__title">
+						<h3 class="catalog__title">
 							Выбрать букет
-						</div>
-						<div class="catalog__desc">
+						</h3>
+						<p class="catalog__desc">
 							Букеты в ассортименте
-						</div>
+						</p>
 					</a>
 				</section>
+
 				<section class="sale">
 					<div class="sale__promo">
-						<h1 class="sale__title">Скидка 10% на первый заказ</h1>
+						<h2 class="sale__title">Скидка 10% на первый заказ</h2>
 						<p class="sale__text">Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
 					</div>
 					<div class="sale__image">
-						<img src="img/sale_flowers1.png" alt="">
+						<img src="img/sale_flowers1.png" alt="" width="590" h="391">
 					</div>
 				</section>
+
 				<section class="steps">
-					<div class="steps__header">
-						<h3>4 шага к идеальному букету</h3>
-					</div>
+					<h2 class="steps__header">
+						4 шага к идеальному букету
+					</h2>
 					<div class="steps__items">
 						<div class="steps__item">
-							<h5 class="item__title">Заказ</h5>
-							<p class="item__text">Выберите понравившийся букет из каталога и оформите заказ</p>
+							<p class="item__title">
+								Заказ
+							</p>
+							<p class="item__text">
+								Выберите понравившийся букет из каталога и оформите заказ
+							</p>
 						</div>
 						<div class="steps__item">
-							<h5 class="item__title">Уточнение деталей</h5>
-							<p class="item__text">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
+							<p class="item__title">
+								Уточнение деталей
+							</p>
+							<p class="item__text">
+								Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали
+							</p>
 						</div>
 						<div class="steps__item">
-							<h5 class="item__title">Оплата</h5>
-							<p class="item__text">Оплатить заказ можно онлайн на сайте или при получении</p>
+							<p class="item__title">
+								Оплата
+							</p>
+							<p class="item__text">
+								Оплатить заказ можно онлайн на сайте или при получении
+							</p>
 						</div>
 						<div class="steps__item">
-							<h5 class="item__title">Доставка</h5>
-							<p class="item__text">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
+							<p class="item__title">
+								Доставка
+							</p>
+							<p class="item__text">
+								Курьер позвонит за час до прибытия и доставит заказ вовремя
+							</p>
 						</div>
 					</div>
 				</section>
+
 				<section class="news">
 					<div class="news__promo">
-						<h3 class="news__title">Следите за нашими новостями</h3>
+						<h2 class="news__title">Следите за нашими новостями</h2>
 						<p class="news__text">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
-						<div class="news__inst"></div>
-						<div class="news__face"></div>
-						<div class="news__twi"></div>
+						<ul class="sn__list">
+							<li>
+								<a href="#">
+									<span class="visually_hidden">Instagram</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="visually_hidden">Facebook</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="visually_hidden">Twitter</span>
+								</a>
+							</li>
+						</ul>
 					</div>
 					<div class="news__image">
 						<img src="img/news_flower1.png" alt="">
@@ -164,47 +212,74 @@
 						<img src="img/news_flower3.png" alt="">
 					</div>
 				</section>
+
 				<section class="reviews">
-					<h3 class="reviews__title">Отзывы</h3>
-					<div class="reviews__item">
+					<h2 class="reviews__title">Отзывы</h2>
+					<blockquote class="reviews__item">
 						<p class="reviews__text">Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
-						<p class="reviews__author">Марина</p>
-					</div>
-					<div class="reviews__item">
+						<cite class="reviews__author">Марина</cite>
+					</blockquote>
+					<blockquote class="reviews__item">
 						<p class="reviews__text">Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
-						<p class="reviews__author">Татьяна</p>
-					</div>
-					<div class="reviews__item">
+						<cite class="reviews__author">Татьяна</cite>
+					</blockquote>
+					<blockquote class="reviews__item">
 						<p class="reviews__text">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
-						<p class="reviews__author">Ольга</p>
-					</div>
+						<cite class="reviews__author">Ольга</cite>
+					</blockquote>
 				</section>
+
 				<section class="map">
 					<div class="map__creds">
-						<h3 class="map__title">Мы ждем вас</h3>
+						<h2 class="map__title">Мы ждем вас</h2>
 						<p class="map__subtitle">Приходите к нам:</p>
 						<p class="map__text">Санкт-Петербург, ул. Большая Конюшенная, 19</p>
 						<p class="map__subtitle">Режим работы:</p>
 						<p class="map__text">Пн-Вск, с 9-00 до 20-00</p>
 						<p class="map__subtitle">Позвоните нам:</p>
-						<p class="map__text">+ 7 (812) 983-47-19</p>
+						<p class="map__text"><a href="tel:+78129834719">+ 7 (812) 983-47-19</a></p>
 						<p class="map__subtitle">Напишите нам:</p>
-						<p class="map__text">info@botanika.ru</p>
+						<p class="map__text"><a href="mailto:info@botanika.ru">info@botanika.ru</a></p>
 					</div>
 				</section>
 			</main>
+
 			<footer class="footer">
 				<img class="footer__logo" src="img/botanica_logo.svg" alt="">
 				<ul class="footer__menu">
-					<li class="footer__item">Каталог</li>
-					<li class="footer__item">Доставка и оплата</li>
-					<li class="footer__item">Отзывы</li>
-					<li class="footer__item">Спецпредложения</li>
-					<li class="footer__item">Контакты</li>
+					<li class="footer__item">
+						<a href="#">Каталог</a>
+					</li>
+					<li class="footer__item">
+						<a href="#">Доставка и оплата</a>
+					</li>
+					<li class="footer__item">
+						<a href="#">Отзывы</a>
+					</li>
+					<li class="footer__item">
+						<a href="#">Спецпредложения</a>
+					</li>
+					<li class="footer__item">
+						<a href="#">Контакты</a>
+					</li>
 				</ul>
-				<div class="footer__inst"></div>
-				<div class="footer__face"></div>
-				<div class="footer__twi"></div>
+				<ul class="sn__list">
+					<li>
+						<a href="#">
+							<span class="visually_hidden">Instagram</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="visually_hidden">Facebook</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="visually_hidden">Twitter</span>
+						</a>
+					</li>
+				</ul>
 			</footer>
 		</div>
 	</body>
