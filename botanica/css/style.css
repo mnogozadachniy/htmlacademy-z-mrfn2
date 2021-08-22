@@ -46,7 +46,7 @@ html, body{
 	min-height: 100%;
 	display: grid;
 	/**max-width: 1200px;**/
-	grid-template: minmax(26px, auto) minmax(64px, auto) 1fr minmax(97px, auto) / 1fr;
+	grid-template: minmax(24px, auto) minmax(64px, auto) 1fr minmax(97px, auto) / 1fr;
 }
 
 .header {
@@ -56,6 +56,9 @@ html, body{
 	border-top: 1px solid #AE7C78;
 	border-bottom: 1px solid #AE7C78;
 	grid-row: 2/3;
+}
+.header__logo {
+	text-align: center;
 }
 .header__menu {
 	display: grid;
@@ -73,8 +76,16 @@ html, body{
 	line-height: 20px;
 	color: #AE7C78;
 }
-
-.main {
+.button{
+	background: #D89999;
+	border-radius: 40px;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFF;
+}
+.content__main {
 	grid-row: 3/4;
 	width: 1200px;
 	justify-self: center;
@@ -89,7 +100,7 @@ html, body{
 	flex-basis: 384px;
 	margin-right: 23px;
 }
-.promo__title h1{
+.promo__title {
 	font-family: 'Playfair Display';
 	font-style: normal;
 	font-weight: normal;
@@ -97,7 +108,7 @@ html, body{
 	line-height: 59px;
 	color: #AE7C78;
 }
-.promo__title span{
+.promo__title em{
 	font-style: italic;
 }
 .promo__subtitle {
@@ -109,17 +120,8 @@ html, body{
 .promo__button {
 	margin-top: 64px;
 	display: flex;
-	background: #D89999;
-	border-radius: 40px;
-	align-items: center;
-	justify-content: center;
 	height: 80px;
 	width: 285px;
-}
-.promo__button > a{
-	font-size: 16px;
-	line-height: 20px;
-	color: #FFF;
 }
 .promo__gallery {
 	display: flex;
@@ -131,6 +133,170 @@ html, body{
 	align-self: flex-end;
 }
 
+.advant {
+	margin-top: 48px;
+	display: flex;
+	color: #AE7C78;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	justify-content: space-between;
+}
+.advant__title, .advant__text {
+	width: 285px;
+	float: left;
+	margin-left: 20px;
+}
+.advant__title {
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+.item_delivery::before {
+	content:'';
+	width: 82px;
+	height: 52px;
+	background: url(../img/icon/advant_icon1.svg);
+	vertical-align: top;
+	float: left;
+}
+.item_fresh::before {
+	content:'';
+	width: 52px;
+	height: 52px;
+	background: url(../img/icon/advant_icon2.svg);
+	vertical-align: top;
+	float: left;
+}
+.item_photo::before {
+	content:'';
+	width: 59px;
+	height: 52px;
+	background: url(../img/icon/advant_icon3.svg);
+	vertical-align: top;
+	float: left;
+}
+
+.popular {
+	margin-top: 80px;
+	color: #ae7c78;
+}
+.popular__header {
+	text-align: center;
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 0.02em;
+}
+.popular__slider {
+	margin-top: 36px;
+	display: flex;
+	justify-content: center;
+}
+.popular__item {
+	width: 397px;
+}
+.popular__title {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	margin-top: 27px;
+}
+.popular_desc {
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 20px;
+}
+.popular__size {
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 24px;
+}
+.popular__price {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	margin-top: 24px;
+}
+.popular__button {
+	width: 285px;
+	height: 80px;
+	margin-top: 64px;
+	display: flex;
+}
+.popular__controls {
+	margin-top: 16px;
+	display: flex;
+	justify-content: center;
+}
+.popular__controls button{
+	height: 16px;
+	width: 50px;
+	background-color: #F7FAFC;
+	margin: 0 10px;
+}
+.popular__controls button:nth-child(1){
+	background-image: url(../img/icon/arrow_less.svg);
+}
+.popular__controls button:nth-child(2){
+	background-image: url(../img/icon/arrow_more.svg);
+}
+.visually-hidden {
+	display: none;
+}
+.catalog {
+	margin-top: 72px;
+	display: flex;
+	justify-content: space-between;
+}
+.catalog__item {
+	color: #fff;
+	display: flex;
+	width: 387px;
+	height: 442px;
+	background-color: #ae7c78;
+	border-radius: 10px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.catalog__item:nth-child(1){
+	background-image: url(../img/catalog_flowers1.jpg);
+}
+.catalog__item:nth-child(2){
+	background-image: url(../img/catalog_flowers2.jpg);
+}
+.catalog__item:nth-child(3){
+	background-image: url(../img/catalog_flowers3.jpg);
+}
+.catalog__item::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 10px;
+	width: 387px;
+	height: 442px;
+	background: rgba(174,124,120,0.6);
+	z-index: 0;
+}
+.catalog__title {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: 0.02em;
+	z-index: 1;
+}
+.catalog__desc {
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 8px;
+	z-index: 1;
+}
 
 .footer {
 	background: #AE7C78;
