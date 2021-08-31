@@ -12,13 +12,17 @@
 		<div class="wrapper">
 			<header class="header">
 				<nav class="header__menu">
-					<a href="#" class="header__logo">
-						<img src="img/botanica_logo.svg" alt="Логотип Botanica" width="100" height="33">
-					</a>
-					<ul class="header__list">
+					<ul class="header__list _left">
 						<li><a href="#" class="header_link">Каталог</a></li>
 						<li><a href="#" class="header_link">Доставка и оплата</a></li>
 						<li><a href="#" class="header_link">Отзывы</a></li>
+					</ul>
+					<div class="header__logo_container">
+						<a href="#" class="header__logo">
+							<img src="img/botanica_logo.svg" alt="Логотип Botanica" width="100" height="33">
+						</a>
+					</div>
+					<ul class="header__list _right">
 						<li><a href="#" class="header_link">Спецпредложения</a></li>
 						<li><a href="#" class="header_link">Контакты</a></li>
 						<li><a href="#" class="header_link">Корзина</a></li>
@@ -49,28 +53,34 @@
 
 				<section class="advant">
 					<div class="advant__item item_delivery">
-						<p class="advant__title">
-							Быстрая доставка
-						</p>
-						<p class="advant__text">
-							Можем собрать букет и передать его в доставку всего за час.
-						</p>
+						<div class="advant__container">
+							<p class="advant__title">
+								Быстрая доставка
+							</p>
+							<p class="advant__text">
+								Можем собрать букет и передать его в доставку всего за час.
+							</p>
+						</div>
 					</div>
 					<div class="advant__item item_fresh">
-						<p class="advant__title">
-							Всегда свежие цветы
-						</p>
-						<p class="advant__text">
-							Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.
-						</p>
+						<div class="advant__container">
+							<p class="advant__title">
+								Всегда свежие цветы
+							</p>
+							<p class="advant__text">
+								Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.
+							</p>
+						</div>
 					</div>
 					<div class="advant__item item_photo">
-						<p class="advant__title">
-							Отправляем фото цветов
-						</p>
-						<p class="advant__text">
-							Перед доставкой сделаем фотографию букета и отправим вам.
-						</p>
+						<div class="advant__container">
+							<p class="advant__title">
+								Отправляем фото цветов
+							</p>
+							<p class="advant__text">
+								Перед доставкой сделаем фотографию букета и отправим вам.
+							</p>
+						</div>
 					</div>
 				</section>
 
@@ -155,7 +165,7 @@
 								Заказ
 							</p>
 							<p class="item__text">
-								Выберите понравившийся букет из каталога и оформите заказ
+								Выберите понравившийся букет <br>из каталога и оформите заказ
 							</p>
 						</div>
 						<div class="steps__item">
@@ -163,7 +173,7 @@
 								Уточнение деталей
 							</p>
 							<p class="item__text">
-								Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали
+								Наш флорист позвонит вам<br> после оформления заказа, чтобы<br> уточнить детали
 							</p>
 						</div>
 						<div class="steps__item">
@@ -171,7 +181,7 @@
 								Оплата
 							</p>
 							<p class="item__text">
-								Оплатить заказ можно онлайн на сайте или при получении
+								Оплатить заказ можно онлайн<br> на сайте или при получении
 							</p>
 						</div>
 						<div class="steps__item">
@@ -179,7 +189,7 @@
 								Доставка
 							</p>
 							<p class="item__text">
-								Курьер позвонит за час до прибытия и доставит заказ вовремя
+								Курьер позвонит за час до<br> прибытия и доставит заказ<br> вовремя
 							</p>
 						</div>
 					</div>
@@ -188,7 +198,7 @@
 				<section class="news">
 					<div class="news__promo">
 						<h2 class="news__title">Следите за нашими новостями</h2>
-						<p class="news__text">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
+						<p class="news__text">Подписывайтесь на наши<br> соцсети и узнавайте<br> о новинках и акциях первым.</p>
 						<ul class="sn__list">
 							<li>
 								<a href="#">
@@ -246,41 +256,43 @@
 			</main>
 
 			<footer class="footer">
-				<img class="footer__logo" src="img/botanica_logo_footer.svg" alt="" width="100px" height="33px">
-				<ul class="footer__menu">
-					<li class="footer__item">
-						<a href="#">Каталог</a>
-					</li>
-					<li class="footer__item">
-						<a href="#">Доставка и оплата</a>
-					</li>
-					<li class="footer__item">
-						<a href="#">Отзывы</a>
-					</li>
-					<li class="footer__item">
-						<a href="#">Спецпредложения</a>
-					</li>
-					<li class="footer__item">
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-				<ul class="sn__list_footer">
-					<li>
-						<a href="#">
-							<span class="visually-hidden">Instagram</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="visually-hidden">Facebook</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span class="visually-hidden">Twitter</span>
-						</a>
-					</li>
-				</ul>
+				<div class="footer__container">
+					<img class="footer__logo" src="img/botanica_logo_footer.svg" alt="" width="100px" height="33px">
+					<ul class="footer__menu">
+						<li class="footer__item">
+							<a href="#">Каталог</a>
+						</li>
+						<li class="footer__item">
+							<a href="#">Доставка и оплата</a>
+						</li>
+						<li class="footer__item">
+							<a href="#">Отзывы</a>
+						</li>
+						<li class="footer__item">
+							<a href="#">Спецпредложения</a>
+						</li>
+						<li class="footer__item">
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+					<ul class="sn__list_footer">
+						<li>
+							<a href="#">
+								<span class="visually-hidden">Instagram</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="visually-hidden">Facebook</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="visually-hidden">Twitter</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</footer>
 		</div>
 	</body>
